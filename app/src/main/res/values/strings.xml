@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GitHubLagos</string>
+    <string name="username">Unicodeveloper</string>
+    <string name="detail">Google Developer Expert. Pushing World Class content @Auth0...</string>
+    <string name="profile_url">www.github.com/repo/david9595</string>
+    <string name="bio">Bio</string>
+    <string name="about">Google Developer Expert.Pushing World Class content @AuthO . Making impact @goodheads &amp; @cloudinary.</string>
+    <string name="url_label">Profile Url</string>
+    <string name="username_label">David9595</string>
+
+</resources>
