@@ -29,7 +29,6 @@ import tarrotsystem.com.githublagos.view.RecyclerItemClickListener;
  */
 
 class DeveloperItemViewHolder extends RecyclerView.ViewHolder{
-    private final String TAG = getClass().getSimpleName();
     private CircleImageView userAvatar;
     private PTTextView userName, userAbout;
     private Item itemList;
@@ -51,6 +50,7 @@ class DeveloperItemViewHolder extends RecyclerView.ViewHolder{
     public void setItem(final Item item, final RecyclerItemClickListener listener, RestClient.GitApiInterface service){
         this.itemList=item;
         userName.setText(itemList.getLogin());
+
         //Using picasso library to display image
         Picasso.with(itemView.getContext())
                 .load(itemList.getAvatarUrl())
@@ -77,7 +77,6 @@ class DeveloperItemViewHolder extends RecyclerView.ViewHolder{
                      userAbout.setText(result.getBio());
                 }
             }
-
             @Override
             public void onFailure(Call<Login> call, Throwable t) {
 
